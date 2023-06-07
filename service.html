@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+			
+
+
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>FAQs | RentNow - Responsive Car Rental Template</title>
+
+		<!-- Preloader CSS-->
+		<style>
+			#preloader:after,#preloader:before{content:"";display:block;left:-1px;top:-1px}#preloader-overlayer,#preloader:after,#preloader:before{position:absolute;height:100%;width:100%}#preloader-overlayer{position:fixed;top:0;left:0;background-color:#112E3B;z-index:999}#preloader{height:40px;width:40px;position:fixed;top:50%;left:50%;margin-top:0px;margin-left:-20px;z-index:9999}#preloader:before{-webkit-animation:rotation 1s linear infinite;animation:rotation 1s linear infinite;border:2px solid #42DB0C;border-top:2px solid transparent;border-radius:100%}#preloader:after{border:1px solid rgba(255,255,255,.1);border-radius:100%}@media only screen and (min-width:768px){#preloader{height:60px;width:60px;margin-top:0px;margin-left:-30px}#preloader:before{left:-2px;top:-2px;border-width:2px}}@media only screen and (min-width:1200px){#preloader{height:80px;width:80px;margin-top:0px;margin-left:-40px}}@-webkit-keyframes rotation{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes rotation{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}} 
+
+
+			.
+			
+			.rn-page-title {
+  position: relative;
+}
+			.rn-pt-overlayer img {
+				
+				padding-top: 90px; 
+      height: 394px;
+    }
+		/* .rn-pt-overlayer {
+  position: relative;
+  z-index: 1;
+} */
+			/* .container {
+  position: relative;
+  z-index: 2;
+} */
+		</style>
+
+		<!--
+		All CSS Codes Loaded
+		Ex: bootstrap, fontawesome, style, etc.
+		-->
+		<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/libs/fontawesome/css/fontawesome-all.min.css">
+		<link rel="stylesheet" href="assets/libs/linearicons/linearicons.css">
+		<link rel="stylesheet" href="assets/css/rentnow-icons.css">
+		<link rel="stylesheet" href="assets/libs/flatpickr/flatpickr.min.css">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- Google Map JS-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=[AIzaSyAC_3YPu9SXMQpLNciN7DD4kzJBwOtCxYg]"></script>
+	</head>
+	<body class="rn-preloader">
+		<div id="preloader"></div>
+		<div id="preloader-overlayer"></div>
+
+		<!-- Header-->
+		<header class="rn-header">
+
+			<!-- Topbar-->
+			<div class="rn-topbar">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 col-sm-5 col-lg-2">
+
+							<!-- Tobar Social-->
+							<ul class="rn-social">
+								<img class="img-fluid" src="White Logo No Background-2.png" alt="Logo" style="width: 100px; height: 85px;">
+								<!-- <li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-google-plus-g"></i>
+									</a>
+								</li> -->
+								
+							</ul>
+
+						</div>
+						<div class="col-12 col-sm-7 col-lg-9">
+
+							<!-- Topbar Contact with Icon-->
+							<div class="rn-icon-contents">
+								<div class="rn-phone rn-icon-content">
+									<div class="rn-icon">
+										<i class="lnr lnr-phone"></i>
+									</div>
+									<div class="rn-info">
+										<ul>
+											<li>(615)-979-7570</li>
+										</ul>
+									</div>
+								</div>
+								<div class="rn-email rn-icon-content">
+									<div class="rn-icon">
+										<i class="lnr lnr-envelope"></i>
+									</div>
+									<div class="rn-info">
+										<ul>
+											<li>nashvillesrentals@gmail.com</li>
+										</ul>
+									</div>
+								</div>
+								<div class="rn-address rn-icon-content">
+									<div class="rn-icon">
+										<i class="lnr lnr-map-marker"></i>
+									</div>
+									<div class="rn-info">
+										<ul>
+											<li>403 Murfeesboro Pike, Nashville</li>
+											<li>Tennessee – 37210, USA</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar-->
+
+
+			<!-- Menubar-->
+			<div class="rn-menubar">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-4">
+							<!-- Logo-->
+							<!-- <a class="brand-name" href="index.html">
+								<img class="img-fluid" src="assets/images/nashvilles-car-rentals-low-resolution-logo-color-on-transparent-background.png" alt="Logo"> -->
+								
+								<!-- <img class="img-fluid" src="https://www.simpleimageresizer.com/_uploads/photos/ebd2589e/Nashvilles-2_4_150x150.png" alt="Logo"> -->
+							</a>
+						</div>
+						<div class="col-8">
+							<nav class="rn-navbar-container">
+
+								<!-- Navbar Toggle Button for Only Tablet and Phone-->
+								<button class="rn-navbar-toggler" id="rn-navbar-toggler">
+									<span class="rn-navbar-toggler-bar"></span>
+									<span class="rn-navbar-toggler-bar"></span>
+									<span class="rn-navbar-toggler-bar"></span>
+								</button>
+
+								<!-- Main Nav Menu-->
+								<ul class="rn-navbar">
+									 
+									<li>
+										<a href="cars.html">Car List 
+										</a>
+									</li>
+				
+									<li>
+										<a href="service.html">FAQs</a>
+									</li>
+									<li>
+                    <a href="gallery-col-2.html">Reviews</a>
+                  </li>
+									<li>
+										<a href="contact.html">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Menubar-->
+
+		</header>
+		<!-- End Header-->
+
+		<!-- Page Title-->
+		<div class="rn-page-title">
+			<div class="rn-pt-overlayer">
+        <img class="d-block w-100" src="handsome-man-sitting-car-testing-it.jpg">
+      </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="rn-page-title-inner">
+							<h1>Frequently Asked Questions</h1>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Page Title-->
+
+		<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style type="text/css">
+      body{
+        background: #eee;
+        padding-top: 20px;
+        font-family: monospace;
+      }
+      
+      .faq-item{
+        margin-bottom: 20px;
+        margin-top: 20px;
+				cursor: pointer; 
+				
+      }
+      .faq-body{
+        display: none;
+        margin-top: 10px;
+      }
+      .faq-wrapper{
+        width: 75%;
+        margin: 0 auto;
+      }
+      .faq-inner{
+        padding: 20px;
+        background: aliceblue;
+				
+      }
+      .faq-plus{
+        float: right;
+        font-size: 1.4em;
+        line-height: 1em;
+        cursor: pointer;
+      }
+
+			/* .faq-item:hover .faq-body {
+      span: block;
+    } */
+      hr{
+        background-color: #9b9b9b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="faq-wrapper">
+          
+          <div class="faq-inner">
+            <div class="faq-item">
+              <h3>
+                Can I rent and leave the State of Tennessee?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                No, our vehicles are only permitted in the State of Tennessee.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                When will I get my security deposit back?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                About 7-10 days after returning the rented vehicle.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                How much is the security deposit?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                The security deposit is $250.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                Which payment methods are available?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                We accept all credit card types with payment in USD.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                What are the minimum age requirements for renting?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                You must be at least 18 years of age to rent, but for 
+						those under the age of 25 there is $120 Under Age Fee.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                Is smoking permitted?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                No! Smoking is not permitted in the rented vehicle.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+			 $(".faq-item").on('click', function() {
+    $(this).find('.faq-body').slideToggle();
+  });
+   //    $(".faq-plus").on('click',function(){
+   //      $(this).parent().parent().find('.faq-body').slideToggle();
+   //    });
+			// $(".faq-plus").on('click', function() {
+   //    $(this).parent().siblings('.faq-body').slideToggle();
+   //  });
+    </script>
+  </body>
+
+</html>
+    
+
+
+				<!-- <div class="row">
+					<div class="col-lg-4 col-md-6">
+
+						
+
+					</div>
+					<div class="col-lg-4 col-md-6">
+
+					
+
+					</div>
+					<div class="col-lg-4 col-md-6"> -->
+
+						<!-- Service Item-->
+						<!-- <div class="rn-service-item">
+							<div class="rn-service-icon">
+								<i class="lnr lnr-user"></i>
+							</div>
+							<div class="rn-service-title">Personal Driver</div>
+							<div class="rn-service-desc">
+								<p>Fusce blandit at tortor vitae ultricies. Praesent efficitur feugiat leo id tempus. Sed pulvinar gravida sodales.</p>
+							</div>
+						</div> -->
+						<!-- End Service Item-->
+
+					<!-- </div>
+					<div class="col-lg-4 col-md-6">
+
+						
+
+					</div>
+					<div class="col-lg-4 col-md-6">
+
+						
+
+					</div>
+					<div class="col-lg-4 col-md-6">
+
+					
+
+					</div> -->
+				<!-- </div>
+			</div> -->
+		</section>
+		<!-- End What We Offer-->
+
+		<!-- Call To Action-->
+		<!-- <section class="rn-section rn-service-c2a">
+			<div class="rn-section-overlayer"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2>Are you looking for renting your car?</h2>
+						<p>Fusce blandit at tortor vitae ultricies. Praesent efficitur feugiat leo id tempus.</p>
+						<a class="btn btn-main btn-lg btn-shadow" href="#">Contact US</a>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!-- End Call To Action-->
+
+		<!-- Clients-->
+		<!-- <section class="rn-section rn-section-light-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12"> -->
+
+						
+
+									</div>
+									<div class="carousel-item">
+
+										<!-- Testimonial Item-->
+										<blockquote class="rn-testimonial-item">
+											<div class="rn-testimonial-author">
+												<div class="rn-testimonial-author-thumb">
+													<img src="assets/images/author-2.jpg" alt="John Doe" srcset="assets/images/author-2.jpg 1x, assets/images/author-2@2x.jpg 2x"/>
+												</div>
+												<div class="rn-testimonial-author-info"><strong>Patrick Cox</strong>
+													<p>CEO, Example Inc.</p>
+												</div>
+											</div>
+											<p>Curabitur neque turpis, pellentesque vel semper ut, tempor vel arcu. Nulla facilisi. Phasellus feugiat nunc eget eros varius, et mollis magna elementum.</p>
+											<footer>
+												<div class="rn-testimonial-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</footer>
+										</blockquote>
+										<!-- End Testimonial Item-->
+
+									</div>
+									<div class="carousel-item">
+
+										<!-- Testimonial Item-->
+										<blockquote class="rn-testimonial-item">
+											<div class="rn-testimonial-author">
+												<div class="rn-testimonial-author-thumb">
+													<img src="assets/images/author-3.jpg" alt="John Doe" srcset="assets/images/author-3.jpg 1x, assets/images/author-3@2x.jpg 2x"/>
+												</div>
+												<div class="rn-testimonial-author-info"><strong>Lauren Anderson</strong>
+													<p>CEO, Example Inc.</p>
+												</div>
+											</div>
+											<p>Curabitur neque turpis, pellentesque vel semper ut, tempor vel arcu. Nulla facilisi. Phasellus feugiat nunc eget eros varius, et mollis magna elementum.</p>
+											<footer>
+												<div class="rn-testimonial-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+											</footer>
+										</blockquote>
+										<!-- End Testimonial Item-->
+
+									</div>
+								</div>
+								<!-- <a class="carousel-control-prev" href="#rn-testimonials" role="button" data-slide="prev">
+									<i class="fas fa-angle-left" aria-hidden="true"></i>
+								</a>
+								<a class="carousel-control-next" href="#rn-testimonials" role="button" data-slide="next">
+									<i class="fas fa-angle-right" aria-hidden="true"></i> -->
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Clients-->
+
+		<!-- Site Footer-->
+		<footer class="rn-footer">
+
+			<!-- Footer Widgets-->
+			<div class="rn-footer-widgets">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+
+							<!-- Widget Item-->
+							<section class="rn-widget">
+								<h2 class="rn-widget-title">About Us</h2>
+								<div class="rn-widget-content">
+									<a class="brand-name" href="index.html">
+										<img src="assets/images/logo.svg" alt="Logo">
+									</a>
+									<p>Locally owned and operated. Close to a decade experience in the automotive industry.
+- Airport and Downtown Locations!
+</p>
+									<ul class="rn-widget-social">
+										<li>
+											<a href="#">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+										<i class="fab fa-google-plus-g"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fab fa-instagram"></i>
+											</a>
+										</li>
+										<!-- <li>
+											<a href="#">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</li> -->
+									</ul>
+								</div>
+							</section>
+							<!-- End Widget Item-->
+
+						</div>
+						<div class="col-md-5">
+
+							<!-- Widget Item-->
+							<section class="rn-widget">
+								<h2 class="rn-widget-title">Pick Up & Drop Off 24/7</h2>
+								<div class="rn-widget-content">
+									<div class="row rn-quick-links">
+										<div class="col-6">
+											<ul>
+												<li>
+													<a href="#">Nashville International Airport (BNA)</a>
+												</li>
+												<br><br>
+												<h2 class="rn-widget-title">Resources</h2>
+												<li>
+													<a href="service.html">Frequently Asked Questions</a>
+												</li>
+												<li>
+													<a href="https://nashvilles-car-rentals.us5.hqrentals.app/public/car-rental/reservations/step1">View Booking</a>
+												</li>
+												<li>
+													<a href="contact.html">See us on the map</a>
+												</li> 
+												
+											</ul>
+										</div>
+										
+										<!-- <div class="col-6">
+											<ul>
+												<li>
+													<a href="#">Site Map</a>
+												</li>
+												<li>
+													<a href="#">Careers</a>
+												</li>
+												<li>
+													<a href="#">Press</a>
+												</li>
+												<li>
+													<a href="#">Get a Receipt</a>
+												</li>
+												<li>
+													<a href="#">Community</a>
+												</li>
+											</ul>
+										</div> -->
+									</div>
+								</div>
+							</section>
+							<!-- End Widget Item-->
+
+						</div>
+						
+						<div class="col-md-3">
+
+							<!-- Widget Item-->
+							<section class="rn-widget">
+								<h2 class="rn-widget-title">Contact Us</h2>
+								<div class="rn-widget-content">
+									<div class="rn-icon-contents">
+										<div class="rn-phone rn-icon-content">
+											<!-- <div class="rn-icon">
+												<i class="lnr lnr-phone"></i>
+											</div> -->
+											<div class="rn-info">
+												<ul>
+													<span style="font-size: 22px; font-weight: bold; color: #00CC00;">(615)-979-7570</span>
+													<!-- <li>(954)-944-1251</li> -->
+												</ul>
+											</div>
+										</div>
+										<div class="rn-email rn-icon-content">
+											<!-- <div class="rn-icon">
+												<i class="lnr lnr-envelope"></i>
+											</div> -->
+											<div class="rn-info">
+												<ul>
+													<li>Mon-Fri 9am to 5pm (Sat to 3pm)</li>
+													<!-- <li>sale@example.com</li> -->
+												</ul>
+											</div>
+										</div>
+										<div class="rn-address rn-icon-content">
+											<div class="rn-icon">
+												<i class="lnr lnr-map-marker"></i>
+											</div>
+											<div class="rn-info">
+												<ul>
+													<li>403 Murfeesboro Pike, Nashville</li>
+													<li>Tennessee – 37210, USA</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<!-- End Widget Item-->
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Footer Widgets-->
+
+			<!-- Footer Copyright-->
+			<div class="rn-footer-copyright">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<p>Copyright &copy; Nashville's Car Rentals 2023. All rights reserved.</p>
+						</div>
+						<div class="col-md-6 text-right">
+							<span class="rn-pyament-methods">
+								<span>We Accept</span>
+								<img src="assets/images/payments.png" alt="payments" srcset="assets/images/payments.png 1x, assets/images/payments@2x.png 2x">
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Footer Copyright-->
+
+		</footer>
+		<!-- End Site Footer-->
+
+		<!--
+		All JavaScripts Codes Loaded
+		Ex: jquery, bootstrap, etc.
+		-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+		<script src="assets/js/starrr.min.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+	</body>
+</html>
